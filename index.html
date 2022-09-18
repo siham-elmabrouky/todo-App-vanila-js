@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+  
+        <div class="user-list">
+            <h3>user list</h3>
+            <button class="add-btn btn">Add new</button>
+            <div class="pop hide">
+                 <form action="">
+                    <input type="text" placeholder="Your id" class="id">
+                    <input type="text" placeholder="Your name"  class="name">
+                    <input type="email" placeholder="Your mail" class="mail">
+                    <input type="text" placeholder="Company"   class="company">
+                    <hr>
+                    <div class="but">
+                        <span class="save btn" id="save">save</span>
+                        <span class="close btn" id="close">close</span>
+                    </div>
+             
+                 </form>
+            </div>
+
+        </div>
+        <table class="tab">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>email</th>
+                <th>company</th>
+                <th>edit</th>
+                <th>delete</th>
+               
+                
+            </thead>
+            <tbody id="box">
+             </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.container{
+    background: #fff;
+    margin: 20px auto ;
+    padding: 20px;
+    width: 90%;
+}
+.user-list{
+  
+ 
+    display: flex;
+    justify-content: space-between;
+   padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+
+    text-align: center;
+}
+h3{
+  font-size: 20px;  
+  font-weight: 700;    
+}
+/* tab style */
+.tab{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    border-spacing: 0px;
+    background: #fff;
+   
+}
+thead{
+    background: rgb(243, 241, 241);
+    height: 66px;
+    border: none;
+}
+.tab th{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+} 
+ 
+.tab td{
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    
+}
+.tab .box {
+   
+    background: rebeccapurple;  
+}
+/* btn */
+.btn{
+    outline: 0px;
+    border: none;
+    padding: 10px 20px;  
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+.add-btn{
+    width: 133px;
+    background: rgb(0, 153, 255);
+
+}
+.edit-btn,
+.delete-btn{
+    width: 90px;
+}
+.edit-btn{
+    background: orange;
+}
+.delete-btn{
+    background: orangered;
+}
+
+ 
+
+/* ************************************************* */
+.hide{
+    display: none;
+}
+.pop{
+    position: absolute;
+    background: #FFF;
+    width:  50%;
+    height: auto;
+   left: 300px;
+    top: 130px;
+    
+    border: 1px solid #ccc;
+}
+.pop form input{
+    display: block;
+    width: 90%;
+    margin: 40px auto;
+    padding: 7px;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 7px;
+}
+ 
+.pop form .but{
+ 
+ display: flex;
+ justify-content: end;
+}
+.pop form  .btn{
+  
+    margin: 20px ;
+}
+.close{
+  background: rgb(219, 61, 4);  
+}
+.save{
+    background: rgb(0, 183, 255);
+}
+
+ /* mdia query for table */
+ @media screen and (max-width : 750px) {
+    .container{
+ 
+        width: auto;
+    }
+    .tab{
+        width: 50% !important;
+        margin: 20px auto;
+        text-align: center;
+        border-spacing: 0px;
+        background: #fff;
+    }
+    thead{
+        background: rgb(243, 241, 241);
+        height: 66px;
+        border: none;
+    }
+    .tab th{
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+    } 
+     
+    .tab td{
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .edit-btn,
+.delete-btn{
+    width: 70px;
+}
+   
+ }
+ /* pop media */
+ @media screen and (max-width : 750px) {
+    .pop{
+        width: 095%;
+        left: 11px;
+        top: 180px;
+    }
+ }
