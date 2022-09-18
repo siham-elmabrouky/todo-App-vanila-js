@@ -1,7 +1,7 @@
- 
+ const box = document.querySelector("#box");
 const getData = () => {
     fetch(
-    "data.json"
+    "https://my-json-server.typicode.com/karolkproexe/jsonplaceholderdb/data"
      )
       .then((response) => response.json())
       .then((datas) => datas.map((data) => createH1(data.id,data.name,data.email,data.address.city,data.company)));
@@ -40,7 +40,7 @@ const getData = () => {
        del.appendChild(butdelete)
     tr.appendChild(del)
       // **********************************
-    document.querySelector("#box").appendChild(tr);
+    box.appendChild(tr);
   
   };
 //   ********************************************:
@@ -66,8 +66,7 @@ save.onclick =  function s(){
 
  if(inputid.value === '' || inputname.value === '' || inputmail.value === '' || inputcompany.value === '' ){
     console.log('no value ');
-    // notask.textContent = 'please write task'
-    // notask.style.color =' #e91e63';
+    alert('Enter the name please!!!');
  
 
 }else{
@@ -79,10 +78,19 @@ save.onclick =  function s(){
 
 }
 }
-// delete btn
-document.addEventListener('click',(e)=>{
+ 
+box.addEventListener('click', (event) => {
+  if(event.target.tagName === 'BUTTON') {
   
-    if(e.target.className=='delete-btn'){
-      console.log('hi') 
-}
+    const button = event.target;
+    const td = button.parentNode;
+    const tr = td.parentNode;
+    const box= tr.parentNode;
+  
+    if(button.textContent === 'delete') {
+      box.removeChild(tr);
+      // console.log('hi');
+
+    }  }
 });
+   
