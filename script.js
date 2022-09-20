@@ -26,13 +26,7 @@ const getData = () => {
       td4.textContent = ele4;
       tr.appendChild(td4);
 
-       // ***********************************
-       const edit = document.createElement("td");
-       const butedit = document.createElement("button");
-       butedit.classList='edit-btn btn';
-       butedit.textContent = 'edit';
-       edit.appendChild(butedit)
-      tr.appendChild(edit)
+ 
        const del = document.createElement("td");
        const butdelete = document.createElement("button");
        butdelete.classList='delete-btn btn';
@@ -67,17 +61,23 @@ save.onclick =  function s(){
  if(inputid.value === '' || inputname.value === '' || inputmail.value === '' || inputcompany.value === '' ){
     console.log('no value ');
     alert('Enter the name please!!!');
- 
+   
 
 }else{
 //    console.log('hi')
  
     createH1(inputid.value,inputname.value,inputmail.value,inputcompany.value);
-    maindiv.classList.add('hide');
     
+ 
+ 
 
 }
+inputid.value = "";
+inputname.value = "";
+ inputmail.value = "";
+ inputcompany.value = "";
 }
+ 
  
 box.addEventListener('click', (event) => {
   if(event.target.tagName === 'BUTTON') {
@@ -91,6 +91,8 @@ box.addEventListener('click', (event) => {
       box.removeChild(tr);
       // console.log('hi');
 
-    }  }
+    } 
+   }
 });
-   
+ 
+ 

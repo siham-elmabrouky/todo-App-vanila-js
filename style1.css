@@ -70,15 +70,13 @@ thead{
     background: rgb(0, 153, 255);
 
 }
-.edit-btn,
+ 
 .delete-btn{
     width: 90px;
 }
-.edit-btn{
-    background: orange;
-}
+ 
 .delete-btn{
-    background: orangered;
+    background: orange;
 }
 
  
@@ -118,11 +116,12 @@ thead{
     margin: 20px ;
 }
 .close{
-  background: rgb(219, 61, 4);  
+    background: orangered;
 }
 .save{
     background: rgb(0, 183, 255);
 }
+ 
 
  /* mdia query for table */
  @media screen and (max-width : 750px) {
