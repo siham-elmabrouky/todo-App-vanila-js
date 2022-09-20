@@ -10,7 +10,7 @@ box-sizing: border-box;
     width: 90%;
 }
 .user-list{
-  background: red;
+ 
  
     display: flex;
     justify-content: space-between;
@@ -157,7 +157,8 @@ thead{
     width: 70px;
 }
 .user-list{
-    width: 145%;
+    width: 100%;
+    border-bottom: none;
 }
    
  }
